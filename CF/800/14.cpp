@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define MAX 10000000000
+#define vi vector<int>
+#define vll vector<ll>
+#define fi first
+#define se second
+#define ull unsigned long long
+#define all(v) v.begin(),v.end()
+typedef long long ll;
+const ll N=1e6+5;
+const ll mod=1e9+7;
+const ll modr=1e9+9;
+
+
+
+void solve(){
+    long long a, b, c;
+    cin >> a >> b >> c;
+
+    if (a > b) {
+        cout << "First\n";
+    } else if (a < b) {
+        cout << "Second\n";
+    } else {
+        if (c & 1) cout << "First\n";
+        else cout << "Second\n";
+    }
+}
+
+
+int main(){
+    freopen("in.txt", "r", stdin);
+    freopen("out.txt", "w", stdout);
+    int t;cin >> t;
+    while(t--){
+        solve();
+    }
+}
+//Road to ICPC 2026 - by hwa
